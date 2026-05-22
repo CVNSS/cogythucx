@@ -1,4 +1,4 @@
----
+Pedagogy Edition (Pro v4)
 title: CVNSS4.0 Trace Learning Pro v4
 emoji: 📘
 colorFrom: blue
@@ -16,7 +16,7 @@ license: mit
 **Repository:** https://github.com/CVNSS/cogythucx  
 **License:** MIT  
 **Phiên bản:** Pro v4 Pedagogy Edition  
-**Thiết kế & đóng gói học online:** Long Ngo, 2025  
+**Thiết kế & đóng gói học online:** Long Ngo, 2026  
 
 ---
 
