@@ -1,30 +1,20 @@
-Pedagogy Edition (Pro v4)
-title: CVNSS4.0 Trace Learning Pro v4
-emoji: 📘
-colorFrom: blue
-colorTo: green
-sdk: static
-app_file: index.html
-pinned: false
-license: mit
----
+# CVNSS4.0 Trace Learning Pro v4 — Pedagogy Edition
 
-# CVNSS4.0 Trace Learning Pro v4 — Pedagogy Edition  
 ## Bảng tuần hoàn quy tắc CVNSS4.0 + Trace 4 làn học online
 
 **Website:** https://cvnss.github.io/cogythucx/  
 **Repository:** https://github.com/CVNSS/cogythucx  
 **License:** MIT  
 **Phiên bản:** Pro v4 Pedagogy Edition  
-**Thiết kế & đóng gói học online:** Long Ngo, 2026  
+**Thiết kế UI/UX, Trace Learning và đóng gói học online:** Long Ngo, 2026 (bản cập nhật)  
 
 ---
 
 ## 🇻🇳 Giới thiệu
 
-**CVNSS4.0 Trace Learning Pro v4 — Pedagogy Edition** là một website học online dành cho **bình dân học vụ**, giáo viên, học sinh, sinh viên, người nghiên cứu tiếng Việt, công nghệ giáo dục và các nhà phát triển muốn học **Chữ VN Song Song 4.0 (CVNSS4.0)** theo cách trực quan, dễ hiểu và có thể kiểm chứng từng bước.
+**CVNSS4.0 Trace Learning Pro v4 — Pedagogy Edition** là một website học online dành cho **bình dân học vụ**, giáo viên, học sinh, sinh viên, người nghiên cứu tiếng Việt, công nghệ giáo dục và các nhà phát triển muốn học **Chữ VN Song Song 4.0 (CVNSS4.0)** theo cách trực quan, dễ hiểu, dễ tra cứu và có thể kiểm chứng từng bước.
 
-Dự án kết hợp:
+Dự án kết hợp ba thành phần chính:
 
 1. **Bảng tuần hoàn quy tắc CVNSS4.0**  
    Các quy tắc được trình bày thành bản đồ học nhanh, có nhóm màu, thẻ quy tắc, ví dụ và phân vùng trực quan.
@@ -33,7 +23,7 @@ Dự án kết hợp:
    Hỗ trợ chuyển đổi hai chiều giữa **Chữ Quốc ngữ (CQN)** và **CVNSS4.0**.
 
 3. **Trace 4 làn cho từng từ**  
-   Mỗi từ được diễn giải theo công thức học:
+   Mỗi từ được diễn giải theo mô hình học:
 
 ```text
 CQN → CVN + KHD + P? = CVNSS4.0
@@ -133,7 +123,7 @@ CVNSSConverter.trace(text, mode)
 CVNSSConverter.selfTest()
 ```
 
-### 1. `convert(text, mode)`
+### `convert(text, mode)`
 
 Chuyển đổi toàn văn bản.
 
@@ -151,7 +141,7 @@ Kết quả mẫu:
 }
 ```
 
-### 2. `convertWord(word, mode)`
+### `convertWord(word, mode)`
 
 Chuyển đổi một từ.
 
@@ -159,7 +149,7 @@ Chuyển đổi một từ.
 CVNSSConverter.convertWord("long", "cqn")
 ```
 
-### 3. `explainWord(word, mode)`
+### `explainWord(word, mode)`
 
 Diễn giải một từ theo 4 làn học.
 
@@ -187,7 +177,7 @@ Kết quả dùng cho giao diện học:
 }
 ```
 
-### 4. `trace(text, mode)`
+### `trace(text, mode)`
 
 Trace nhiều token trong đoạn văn.
 
@@ -195,7 +185,7 @@ Trace nhiều token trong đoạn văn.
 CVNSSConverter.trace("tuyết long", "cqn")
 ```
 
-### 5. `selfTest()`
+### `selfTest()`
 
 Kiểm thử nhanh các ca quan trọng.
 
@@ -282,15 +272,13 @@ start https://cvnss.github.io/cogythucx/
 
 ## 🤗 Triển khai lên Hugging Face Spaces
 
-Tạo Space mới trên Hugging Face với cấu hình:
+Khi công bố trên Hugging Face Spaces, tạo Space mới với cấu hình:
 
 - SDK: **Static HTML**
 - App file: **index.html**
 - License: **MIT**
 
-Upload toàn bộ nội dung thư mục dự án lên Space.
-
-YAML ở đầu README đã chuẩn bị sẵn:
+Nếu dùng Hugging Face Spaces, có thể thêm YAML metadata ở đầu README như sau:
 
 ```yaml
 ---
@@ -304,6 +292,8 @@ pinned: false
 license: mit
 ---
 ```
+
+**Lưu ý:** Phần YAML này chỉ cần thiết cho Hugging Face Spaces. Khi đăng README trên GitHub thông thường, có thể bỏ YAML để tránh hiển thị lộn xộn.
 
 ---
 
@@ -475,12 +465,19 @@ https://cvnss.github.io/cogythucx/
 
 Create a new **Static HTML Space**, then upload all project files.
 
-The required metadata is already included at the top of this README:
+For Hugging Face Spaces only, add this metadata block at the top of `README.md`:
 
 ```yaml
+---
+title: CVNSS4.0 Trace Learning Pro v4
+emoji: 📘
+colorFrom: blue
+colorTo: green
 sdk: static
 app_file: index.html
+pinned: false
 license: mit
+---
 ```
 
 ---
